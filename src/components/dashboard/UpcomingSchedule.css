@@ -1,0 +1,64 @@
+.upcoming-schedule {
+  background-color: #f8faff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.schedule-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1e1b4b;
+}
+
+.schedule-section {
+  margin-bottom: 20px;
+}
+
+.schedule-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.schedule-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .schedule-cards {
+    justify-content: center;
+  }
+
+  .upcoming-schedule {
+    padding: 16px;
+  }
+
+  .schedule-section h4 {
+    font-size: 0.9rem;
+  }
+
+  .schedule-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .schedule-section h4,
+  .schedule-title {
+    text-align: center;
+  }
+}

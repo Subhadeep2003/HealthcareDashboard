@@ -1,0 +1,74 @@
+.health-status-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #f9fbff;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+
+.card h4 {
+  margin: 0;
+  color: #1e1b4b;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 8px 0;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .health-status-cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .health-status-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+}

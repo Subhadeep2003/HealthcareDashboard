@@ -1,0 +1,67 @@
+.dashboard-main {
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e1b4b;
+  margin-bottom: 20px;
+}
+
+.main-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.anatomy-cards {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .anatomy-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .dashboard-main {
+    padding: 16px;
+  }
+
+  .anatomy-cards {
+    gap: 15px;
+  }
+}
